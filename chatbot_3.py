@@ -52,7 +52,7 @@ def chat():
 
         # print(Fore.GREEN + "ChatBot:" + Style.RESET_ALL,random.choice(responses))
 
-return(Fore.YELLOW + "Start messaging with the bot (type quit to stop)!" + Style.RESET_ALL)
+print(Fore.YELLOW + "Start messaging with the bot (type quit to stop)!" + Style.RESET_ALL)
 chat()
 
 def main():
