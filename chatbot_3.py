@@ -26,7 +26,7 @@ def chat():
     model = keras.models.load_model('chat_model')
 
     # load tokenizer object
-    tokenizer = pickle.load(open('tokenizer_test.pickle','rb'))
+    tokenizer = pickle.load(open('tokenizer.pickle','rb'))
     #with open('tokenizer.pickle', 'rb') as handle:
         #tokenizer = pickle.load(handle)
 
