@@ -26,12 +26,14 @@ def chat():
     model = keras.models.load_model('chat_model')
 
     # load tokenizer object
-    with open('tokenizer.pickle', 'rb') as handle:
-        tokenizer = pickle.load(handle)
+    tokenizer = pickle.load(open('tokenizer_test.pickle','rb'))
+    #with open('tokenizer.pickle', 'rb') as handle:
+        #tokenizer = pickle.load(handle)
 
     # load label encoder object
-    with open('label_encoder.pickle', 'rb') as enc:
-        lbl_encoder = pickle.load(enc)
+    lbl_encoder = pickle.load(open('label_encoder.pickle','rb'))
+    #with open('label_encoder.pickle', 'rb') as enc:
+        #lbl_encoder = pickle.load(enc)
 
     # parameters
     max_len = 20
